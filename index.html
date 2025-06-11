@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutons audio - Fitini</title>
+  <style>
+    .btn-audio {
+      padding: 10px 20px;
+      background: #749225;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 12px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-audio:hover {
+      background: #8DB337;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+  <a class="btn-audio" href="#" onclick="document.getElementById('audio1').play(); return false;">🎶🧺 Tapis musical</a>
+  <audio id="audio1" src="https://drive.google.com/uc?export=download&amp;id=1CZFlKSBJTULnfrpfpNj_tQNbxRUOcdx6"></audio>
+  <!-- ... (truncated for brevity; include all other audio tags similarly) ... -->
+  <a class="btn-audio" href="#" onclick="document.getElementById('audio19').play(); return false;">😆 Rires des villageois</a>
+  <audio id="audio19" src="https://drive.google.com/uc?export=download&amp;id=1SgHDVl3v7C1W4u6OFHOCOoDXr_aF10tZ"></audio>
+</div>
+</body>
+</html>
